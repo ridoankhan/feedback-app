@@ -1,12 +1,12 @@
 /* eslint-disable no-unused-vars */
 import { FaTimes } from 'react-icons/fa'
 import { useState } from 'react'
-import PropTypes from 'react'
+// import PropTypes from 'react'
 import Card from './shared/Card'
 
 function FeedbackItem({ item, handleDelete }) {
   return (
-    <Card reverse={false}>
+    <Card>
       <div className='num-display'>{item.rating}</div>
       <button onClick={() => handleDelete(item.id)} className='close'>
         <FaTimes />
@@ -16,10 +16,10 @@ function FeedbackItem({ item, handleDelete }) {
   )
 }
 
-FeedbackItem.propTypes = {
-  id: PropTypes.number,
-  rating: PropTypes.number,
-  text: PropTypes.string,
-}
+// FeedbackItem.propTypes = {
+//   id: PropTypes.number,
+//   rating: PropTypes.number,
+//   text: PropTypes.string,
+// }
 
 export default FeedbackItem

@@ -1,4 +1,4 @@
-import { React, PropTypes } from 'react'
+import { React } from 'react'
 import FeedbackItem from './FeedbackItem'
 
 function FeedbackList({ feedback, handleDelete }) {
@@ -16,12 +16,12 @@ function FeedbackList({ feedback, handleDelete }) {
   )
 }
 
-FeedbackList.propTypes = {
-  feedback: PropTypes.arrayOf({
-    id: PropTypes.number.isRequired,
-    rating: PropTypes.number.isRequired,
-    text: PropTypes.string.isRequired,
-  }),
-}
+// FeedbackList.propTypes = {
+//   feedback: PropTypes.arrayOf({
+//     id: PropTypes.number.isRequired,
+//     rating: PropTypes.number.isRequired,
+//     text: PropTypes.string.isRequired,
+//   }),
+// }
 
 export default FeedbackList
