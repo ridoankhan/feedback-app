@@ -1,4 +1,5 @@
-import { React, PropTypes } from 'react'
+import React from 'react'
+// import { PropTypes } from 'react'
 
 function Button({ children, version, type, isDisabled }) {
   return (
@@ -11,7 +12,7 @@ function Button({ children, version, type, isDisabled }) {
 // Button.defaultProps = {
 //   version: 'primary',
 //   type: 'button',
-//   isDisabled: false,
+//   isDisabled: true,
 // }
 
 // Button.propTypes = {
