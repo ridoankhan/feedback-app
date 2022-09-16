@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useState } from 'react'
 import { FaTimes } from 'react-icons/fa'
-// import PropTypes from 'react'
+import PropTypes from 'prop-types'
 import Card from './shared/Card'
 
 function FeedbackItem({ item, handleDelete }) {
@@ -16,10 +16,10 @@ function FeedbackItem({ item, handleDelete }) {
   )
 }
 
-// FeedbackItem.propTypes = {
-//   id: PropTypes.number,
-//   rating: PropTypes.number,
-//   text: PropTypes.string,
-// }
+FeedbackItem.propTypes = {
+  id: PropTypes.number,
+  rating: PropTypes.number,
+  text: PropTypes.string,
+}
 
 export default FeedbackItem
