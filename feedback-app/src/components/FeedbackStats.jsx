@@ -2,8 +2,9 @@ import React, { useContext } from 'react'
 import FeedbackContext from '../context/FeedbackContext'
 
 function FeedbackStats() {
-  let { feedback } = useContext(FeedbackContext)
+  const { feedback } = useContext(FeedbackContext)
   // Calculate average ratings
+
   let average = feedback.reduce((acc, cur) => {
     return acc + cur.rating / feedback.length
   }, 0)
@@ -12,7 +13,7 @@ function FeedbackStats() {
   return (
     <div className='feedback-stats'>
       <h4>{feedback.length} Reviews</h4>
-      <h4>Average Rating: {average}</h4>
+      <h4>Average Rating: {isNaN(average) ? 0 : average}</h4>
     </div>
   )
 }
