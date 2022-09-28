@@ -3,8 +3,12 @@ import FeedbackContext from '../context/FeedbackContext'
 
 function FeedbackStats() {
   const { feedback } = useContext(FeedbackContext)
-  // Calculate average ratings
 
+  if (!feedback || feedback.length === 0) {
+    return <p></p>
+  }
+
+  // Calculate average ratings
   let average = feedback.reduce((acc, cur) => {
     return acc + cur.rating / feedback.length
   }, 0)

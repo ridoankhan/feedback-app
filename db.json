@@ -1,0 +1,40 @@
+{
+  "feedback": [
+    {
+      "text": "task-1: buy tissue packet",
+      "rating": 9,
+      "id": 1
+    },
+    {
+      "id": 2,
+      "text": "backend item no 2",
+      "rating": 8
+    },
+    {
+      "id": 3,
+      "text": "backend item no 3",
+      "rating": 7
+    },
+    {
+      "text": "backend item no 4",
+      "rating": 10,
+      "id": 4
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Ridoan Khan",
+      "lastName": "Anik",
+      "age": 28,
+      "profession": "sofware engineer"
+    },
+    {
+      "id": 2,
+      "firstName": "Naziha Rahman",
+      "lastName": "Mohona",
+      "age": 26,
+      "profession": "quality assurance"
+    }
+  ]
+}
